@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realizar Pedido</title>
+    <!-- Asegúrate de vincular el archivo CSS correcto -->
+    <link rel="stylesheet" href="pagina-de-pedido2.css"/>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Realizar Pedido</h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="Menu.html">Productos</a>
+                <a href="pagina-de-pedido.html">Carrito</a>
+                <a href="contacto.html">Contáctanos</a>
+                <div id="admin-options" style="display: none;">
+                    <a href="admin.html" id="admin-link">Administrar</a>
+                    <a href="admin-pedidos.php" id="view-orders-link">Ver Pedidos</a>
+                    <a href="admin_users.php">Ver Usuarios Registrados</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="order-summary">
+            <h2>Resumen del Carrito</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cantidad</th>
+                        <th>Producto</th>
+                        <th>Valor Unitario</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody id="order-cart-products">
+                    <!-- Aquí se llenarán los productos del carrito -->
+                </tbody>
+            </table>
+            <div class="order-total">
+                <h3>Total a Pagar:</h3>
+                <span id="order-total">$0</span>
+            </div>
+        </section>
+        
+        <section class="order-details">
+            <h2>Detalles del Pedido</h2>
+            <form id="order-form" action="procesar_pedido.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="grade">Grado:</label>
+                <select id="grade" name="grade">
+                    <option value="" disabled selected>Selecciona un grado</option>
+                    <option value="1">Grado 1</option>
+                    <option value="2">Grado 2</option>
+                    <option value="3">Grado 3</option>
+                    <option value="4">Grado 4</option>
+                    <option value="5">Grado 5</option>
+                    <option value="6">Grado 6</option>
+                    <option value="7">Grado 7</option>
+                    <option value="8">Grado 8</option>
+                    <option value="9">Grado 9</option>
+                    <option value="10">Grado 10</option>
+                    <option value="11">Grado 11</option>
+                </select>
+                <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required />
+                
+                <button type="submit" class="submit-button">Confirmar Pedido</button>
+                
+            </form>
+            
+        </section>
+    </main>
+    <script src="pedido.js"></script>
+    <script src="adminCheck.js"></script>
+</body>
+</html>

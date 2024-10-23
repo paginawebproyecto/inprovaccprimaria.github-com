@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #1983ad;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.payment-methods {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.payment-methods h2 {
+    margin: 0 0 20px 0;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.payment-option input {
+    margin-right: 10px;
+}
+
+.payment-option img {
+    width: 60px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px;
+}
+
+.submit-button {
+    background-color: #1983ad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #005C99;
+}

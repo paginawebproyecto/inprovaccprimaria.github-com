@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seleccionar Método de Pago</title>
+    <link rel="stylesheet" href="metodo-pago.css" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Seleccionar Método de Pago</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="payment-methods">
+            <h2>Elige tu método de pago</h2>
+            <div class="payment-options">
+                <div class="payment-option">
+                    <input type="radio" id="nequi" name="payment-method" value="nequi">
+                    <label for="nequi">
+                        <img src="nequi.png" alt="Nequi Logo" />
+                        <span>Nequi</span>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="bancolombia" name="payment-method" value="bancolombia">
+                    <label for="bancolombia">
+                        <img src="b8cdc1ad498fe080bc21bb5a03c24f83.png" alt="Bancolombia Logo" />
+                        <span>Bancolombia</span>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="efectivo" name="payment-method" value="efectivo">
+                    <label for="efectivo">
+                        <img src="logoefectivo.png" alt="Efectivo Logo" />
+                        <span>Efectivo</span>
+                    </label>
+                </div>
+                <div class="payment-option">
+                    <input type="radio" id="otros-bancos" name="payment-method" value="otros-bancos">
+                    <label for="otros-bancos">
+                        <img src="bancos.png" alt="Otros Bancos Logo" />
+                        <span>Otros Bancos</span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="submit-button" onclick="confirmPaymentMethod()">Confirmar Método de Pago</button>
+        </section>
+    </main>
+
+    <script src="metodo-pago.js"></script>
+</body>
+</html>

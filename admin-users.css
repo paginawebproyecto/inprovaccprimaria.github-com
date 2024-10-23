@@ -1,0 +1,97 @@
+
+/* Estilos para el contenedor de navegación */
+nav {
+    background-color: #333; /* Fondo oscuro para el menú */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* Estilos para los enlaces dentro de la navegación */
+nav a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado de los enlaces */
+    padding: 10px 15px; /* Espaciado dentro de los enlaces */
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+/* Hover en los enlaces */
+nav a:hover {
+    background-color: #575757; /* Cambia el fondo al pasar el cursor */
+}
+
+/* Opciones de administración */
+#admin-options {
+    display: flex; /* Para mostrar las opciones de administración en fila */
+    gap: 10px; /* Espaciado entre los enlaces */
+}
+
+#admin-options a {
+    background-color: #444; /* Fondo oscuro para diferenciar las opciones de admin */
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+#admin-options a:hover {
+    background-color: #555; /* Cambia el fondo al pasar el cursor en las opciones de admin */
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Cambia la disposición del menú a columna en pantallas pequeñas */
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 8px 10px; /* Ajustar el espaciado en pantallas pequeñas */
+    }
+
+    #admin-options {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color de texto principal */
+}
+
+/* Header Styles */
+header {
+    background-color: #ad8319; /* Fondo azul */
+    color: white; /* Texto blanco */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra debajo del header */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: left; /* Alinea el título a la izquierda */
+}
+
+/* Navigation Styles */
+nav a {
+    color: white; /* Color de los enlaces */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subraya los enlaces al pasar el ratón */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+/* Subheading Styles */
+h2 {
+    color: #ad8319; /* Color de los encabezados secundarios */
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Order Summary and Details Sections */
+.order-summary,
+.order-details {
+    background-color: white; /* Fondo blanco para las cajas */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Table Styles in Order Summary */
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina espacios entre celdas */
+    margin-bottom: 20px;
+}
+
+.order-summary table th,
+.order-summary table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Línea debajo de cada fila */
+}
+
+.order-summary table th {
+    background-color: #f0f0f0; /* Fondo gris claro para encabezados de tabla */
+}
+
+/* Order Total Section */
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Order Form Styles */
+.order-details form {
+    display: flex;
+    flex-direction: column; /* Columnas para el formulario */
+}
+
+.order-details label {
+    margin-bottom: 5px;
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.order-details input,
+.order-details select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total del input */
+}
+
+.order-details select {
+    background-color: white;
+    cursor: pointer; /* Cambia el cursor al pasar sobre un selector */
+}
+
+/* Submit Button Styles */
+.submit-button {
+    background-color: #ad8319; /* Azul del botón */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave en el hover */
+}
+
+.submit-button:hover {
+    background-color: #106a8e; /* Color del botón al pasar el ratón */
+}

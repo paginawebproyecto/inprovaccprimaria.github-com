@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagar con Nequi</title>
+    <link rel="stylesheet" href="nequi-pago.css" />
+</head>
+<body>
+    <header>
+        <h1>Pago con Nequi</h1>
+    </header>
+    
+    <main>
+        <section class="payment-details">
+            <h2>Instrucciones para el Pago</h2>
+            <p><strong>Total a pagar:</strong> $<span id="total"></span></p>
+            <p><strong>Cuenta Nequi:</strong> 3001234567</p>
+            <p>Por favor ingresa esta cuenta en tu aplicación de Nequi y transfiere el monto total.</p>
+        </section>
+    </main>
+
+    <script>
+        // Este valor lo puedes obtener del carrito (ejemplo, aquí se usa un valor ficticio)
+        const total = 50000; // Debes reemplazarlo con el total real del carrito
+        
+        document.getElementById('total').innerText = total;
+    </script>
+</body>
+</html>

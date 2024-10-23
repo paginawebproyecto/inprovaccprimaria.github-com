@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('662139e34f94e.jpeg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Mantiene el fondo ocupando el 100% de la pantalla */
+    min-height: 100vh; /* Asegura que no haya espacio en blanco */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Colocar el contenido más hacia abajo */
+    padding-top: 10px; /* Añadir espacio superior */
+    padding-bottom: 100px; /* Añadir espacio inferior */
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.998); /* Fondo blanco semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+    margin-top: 10px; /* Ajuste extra para dar más separación */
+}
+
+/* Títulos */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas de campos */
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Campos de entrada de texto, selección, y contraseña */
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:  #ad8319;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+/* Efecto hover en botones */
+button:hover {
+    background-color:  #ad8319;
+}
+
+/* Párrafos y enlaces */
+p {
+    color: #555;
+}
+
+p a {
+    color: #ad8319;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

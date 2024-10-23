@@ -1,0 +1,51 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #1983ad; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px; /* Espaciado */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Eliminar espacios entre celdas */
+    margin: 20px 0; /* Espaciado alrededor de la tabla */
+}
+
+/* Estilo de las celdas de la tabla */
+th, td {
+    border: 1px solid #ddd; /* Borde de las celdas */
+    padding: 12px; /* Espaciado dentro de las celdas */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Estilo para el encabezado de la tabla */
+th {
+    background-color:  #1983ad; /* Color de fondo para el encabezado */
+    color: white; /* Color del texto del encabezado */
+}
+
+/* Estilo para las filas alternas de la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+/* Efecto al pasar el mouse sobre las filas */
+tr:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para listas dentro de las celdas */
+ul {
+    padding: 0; /* Sin espaciado */
+    margin: 0; /* Sin margen */
+    list-style-type: none; /* Sin viñetas */
+}

@@ -1,0 +1,229 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('662139e34f94e.jpeg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Para que la imagen cubra toda la pantalla */
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Mantiene el fondo ocupando el 100% de la pantalla */
+    min-height: 100vh; /* Asegura que no haya espacio en blanco */
+}
+
+/* Header */
+header {
+    background: #ad8319;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 10; /* Incrementa el z-index del header */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+}
+
+nav {
+    flex: 2;
+    text-align: right;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Barra de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    z-index: 10; /* Asegúrate de que la barra de búsqueda esté sobre el fondo */
+    position: relative;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 4px;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    background-color: rgba(217, 234, 245, 0);
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+
+/* Carrito */
+#cart {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 20; /* Aumenta el z-index para que esté por encima de otros elementos */
+}
+
+#cart.closed {
+    transform: translateX(100%);
+}
+
+#cart.open {
+    transform: translateX(0);
+}
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Productos en la página principal */
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(217, 234, 245, 0);
+    border-radius: 8px;
+    z-index: 1;
+    position: relative;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item figure {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.info-product h2 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.info-product p {
+    margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-product button {
+    background-color:  #ad8319;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info-product button:hover {
+    background-color: #ca950d;
+}
+
+/* Botones en el carrito */
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-items .product-quantity {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.increase-quantity, .decrease-quantity, .remove-product {
+    background-color: #ad8319;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+
+.increase-quantity:hover, .decrease-quantity:hover, .remove-product:hover {
+    background-color: #ca950d;
+}
+
+#total-price {
+    font-weight: bold;
+}

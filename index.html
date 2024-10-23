@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<body>
+    <header>
+        <h1>LUCRE SHOP</h1>
+        <link rel="stylesheet" href="styles1.css">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Menu.html">Productos</a>
+            <a href="pagina-de-pedido.html">Carrito</a>
+            <a href="contacto.html">Contáctanos</a>
+            <div id="admin-options" style="display: none;">
+                <a href="admin.html" id="admin-link">Administrar</a>
+                <a href="admin-pedidos.php" id="view-orders-link">Ver Pedidos</a>
+                <a href="admin_users.php">Ver Usuarios Registrados</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="slider">
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="empandas.jpg" alt="Imagen 1">
+                </div>
+                <div class="slide">
+                    <img src="detoditos.webp" alt="Imagen 2">
+                </div>
+                <div class="slide">
+                    <img src="Deditos-o-Palitos.jpg" alt="Imagen 3">
+                </div>
+                <!-- Agrega más imágenes según sea necesario -->
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 La Tienda Escolar</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="adminCheck.js"></script>
+</body>
+</html>

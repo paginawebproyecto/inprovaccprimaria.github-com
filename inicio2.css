@@ -1,0 +1,57 @@
+/* Estilo para centrar y dar formato al formulario de inicio de sesión */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('662139e34f94e.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px; /* Ancho fijo del formulario */
+    padding: 20px;
+    background-color: rgb(255, 255, 255); /* Fondo blanco semi-transparente */
+    border-radius: 8px;
+    box-shadow: 0 0 10px    rgba(0, 0, 0, 0.6);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ad8319;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #ca950d;
+}
+
+p {
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background-image: url('662139e34f94e.jpeg'); 
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+}
+
+.role-container {
+    text-align: center;
+    background-color: rgb(255, 255, 255); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color:  #ad8319;
+    border-radius: 5px;
+    font-size: 16px;
+}

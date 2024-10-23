@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ad8319;
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    flex-grow: 1;
+    text-align: left;
+    color: white;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    background-color: rgba(217, 234, 245, 0.8); /* Fondo similar al de realizar pedido */
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Contenedor del formulario de contacto */
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Títulos y textos */
+h1 {
+    text-align: center;
+    color: #333; /* Color contrastante con el fondo */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333; /* Color de texto más oscuro para mejor legibilidad */
+}
+
+/* Campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(217, 234, 245, 0.8); /* Fondo claro con opacidad */
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1983ad; /* Botón con color similar al header */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ad8319; /* Color más oscuro al hacer hover */
+}
+
+/* Footer */
+footer {
+    background: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

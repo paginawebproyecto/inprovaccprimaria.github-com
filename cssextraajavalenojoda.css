@@ -1,0 +1,46 @@
+/* Estilos generales para la sección de productos */
+.product-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el nombre del producto */
+.product-item h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el precio del producto */
+.product-item .price {
+    font-size: 20px;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el inventario del producto */
+.product-item p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el formulario */
+.product-item form {
+    margin-top: 10px;
+}
+
+.product-item input[type="hidden"] {
+    display: none;
+}
